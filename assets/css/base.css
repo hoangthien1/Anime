@@ -28,7 +28,7 @@ html{
     box-shadow: 2px 2px 30px -5px rgba(0,0,0,0.83);
     border-radius: 2px;
     animation: fadeIn linear .2s;
-    z-index: 1;
+    z-index: 999;
 }
 
 .anime__type-list{
@@ -121,7 +121,7 @@ html{
     --growth-to: 1;
     margin: auto;
     position: relative;
-    z-index: 1;
+    z-index: 999;
     animation: growth linear .2s;
 }
 /* button */

@@ -183,7 +183,7 @@
     border-radius: 2px;
     display: none;
     animation: fadeIn linear .2s;
-    z-index: 1;
+    z-index: 999;
 }
 
 .search__result-heading--noinput{
@@ -274,7 +274,7 @@
     background-color: rgb(182, 182, 182);
     display: none;
     animation: fadeIn linear .2s;
-    z-index: 1;
+    z-index: 999;
 }
 
 .notify::before{
