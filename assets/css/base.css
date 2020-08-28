@@ -27,6 +27,8 @@ html{
     border-top: 3px solid #fdcb6e;
     box-shadow: 2px 2px 30px -5px rgba(0,0,0,0.83);
     border-radius: 2px;
+    animation: fadeIn linear .2s;
+    z-index: 1;
 }
 
 .anime__type-list{
@@ -48,10 +50,11 @@ html{
     font-weight: 500;
     transition: ease .2s;
     white-space: nowrap;
+    transition: border-bottom linear .2s
 }
 
 .anime__type-list-items-link:hover{
-    border-bottom: 1px solid #fdcb6e;
+    border-bottom: 1px solid #fdcb6e;   
 }
 
 /* custom srcoll bar */
