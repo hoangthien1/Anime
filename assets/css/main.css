@@ -2,9 +2,10 @@
 .header{
     height: var(--header-height);
     background-color: var(--primary-color);
-    position: fixed;
+    /* position: fixed;
     right: 0;
-    left: 0;
+    left: 0; */
+    /* z-index: 1; */
     border-bottom: 1px solid rgba(0,0,0,0.7);
 }
 
@@ -487,7 +488,7 @@
 }
 
 .anime__container-slide{
-    padding-top: 70px;
+    padding-top: 10px;
 }
 
 .slide{
