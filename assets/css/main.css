@@ -686,12 +686,32 @@
 }
 
 .manual-btn{
-    /* border: 2px solid #ffff; */
-    background-color: #ADADAC;
+    border: 1px solid #ffff;
+    /* background-color: #ADADAC; */
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
     transition: .3s;
+}
+
+.navigation-dot{
+    position: absolute;
+    /* width: 100%; */
+    top: 95%;
+    display: flex;
+    right: calc(2% - -7px);
+    /* background-color: brown; */
+}
+
+.navigation-dot div{
+    border: 1px solid #ffff;
+    padding: 5px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.navigation-dot div:not(:last-child){
+    margin-right: 15px;
 }
 
 .manual-btn:not(:last-child){
@@ -721,5 +741,23 @@
 #radio5:checked ~ .first{
     margin-left: -80%;
 }
-           
 
+#radio1:checked ~ .navigation-dot .dot-btn1{
+    background: var(--red-color);
+}
+
+#radio2:checked ~ .navigation-dot .dot-btn2{
+    background: var(--red-color);
+}
+
+#radio3:checked ~ .navigation-dot .dot-btn3{
+    background: var(--red-color);
+}
+
+#radio4:checked ~ .navigation-dot .dot-btn4{
+    background: var(--red-color);
+}
+
+#radio4:checked ~ .navigation-dot .dot-btn4{
+    background: var(--red-color);
+}
