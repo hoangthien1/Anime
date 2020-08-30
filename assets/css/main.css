@@ -5,6 +5,7 @@
     position: fixed;
     right: 0;
     left: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.7);
 }
 
 .header__nav{
@@ -480,3 +481,87 @@
 }
 
 /* slide */
+
+.anime__container{
+    background-color: #3e3e3e;
+}
+
+.anime__container-slide{
+    padding-top: 70px;
+}
+
+.slide{
+    /* background-color: white; */
+    width: 100%;
+    /* border-radius: 10px; */
+    overflow: hidden;
+    position: relative;
+}
+
+.anime__slide-heading{
+    color: var(--red-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.anime__slide{
+    /* background-color: blueviolet; */
+    display: flex;
+    width: 500%;
+    height: 350px;
+}
+
+.anime__slide input{
+    display:none;
+}
+
+.anime__slide-container{
+    width: 20%;
+    transition: .5s;
+}
+
+.navigation-manual{
+    position: absolute;
+    /* width: 100%; */
+    top: 95%;
+    display: flex;
+    right: 5%;
+    /* background-color: brown; */
+}
+
+.manual-btn{
+    border: 2px solid #ffff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 5px;
+}
+
+.manual-btn:hover{
+    background-color: var(--red-color);
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
