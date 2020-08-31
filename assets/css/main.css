@@ -590,6 +590,7 @@
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    margin-left: 1px
 }
 
 .anime__slide-info-tags-items{
@@ -761,3 +762,5 @@
 #radio4:checked ~ .navigation-dot .dot-btn4{
     background: var(--red-color);
 }
+
+/* film */
