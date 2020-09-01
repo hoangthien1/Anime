@@ -822,14 +822,16 @@
     justify-content: center;
     align-items: center;
     display: none;
-    animation: fadeIn linear .3s;
+    animation: fadeIn linear .2s;
 }
 
 .anime__box-play{
+    --growth-from: 0;
+    --growth-to: 1.1;
     color: var(--red-color);
     font-size: 5rem;
     font-weight: 400;
-    animation: fadeIn linear .6s;
+    animation: growth linear .4s;
 }
 
 .anime__link-wrap{
