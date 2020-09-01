@@ -540,18 +540,17 @@
 }
 
 .anime__slide-img{
-    width: 820px;
+    width: 800px;
     transition: linear .3s;
     cursor: pointer;
-    /* filter: blur(1px); */
 }
 
 .anime__slide-img:hover{
-    transform: scale(1.03);
+    filter:blur(1.5px);
 }
 
 .anime__slide-info{
-    margin-left: 20px;
+    margin-left: 4px;
     display: flex;
     flex-direction: column;
     /* justify-content: space-around; */
@@ -563,6 +562,10 @@
     font-weight: 500;
     user-select: none;
     text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 350px;
     transition: linear .2s;
 }
 
@@ -811,6 +814,10 @@
     display: flex;
 }
 
+.anime__box:hover .anime__link-wrap .anime__box-img{
+    transform: scale(1.1);
+}
+
 .anime__box-overlay{
     text-decoration: none;
     position: absolute;
@@ -836,11 +843,13 @@
 
 .anime__link-wrap{
     margin-bottom: 25px;
+    overflow: hidden;
 }
 
 .anime__box-img{
     width: 100%;
     height: 310px;
+    transition: all linear .3s;
 }
 
 .anime__box-ep{
@@ -881,4 +890,43 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     padding: 5px;
+}
+
+/* pagination */
+.pagination__list{
+    margin-top: 10px;
+    background-color: #2B2B2B;
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #4a4a4a;
+}
+
+.pagination__list-number{
+    margin: 15px 0;
+}
+
+.pagination__list-number:not(:last-child){
+    margin-right: 8px;
+}
+
+.pagination__list-number.pagination__list-number--actived .pagination__list-number-link{
+    background-color: var(--red-color);
+}
+
+.pagination__list-number-link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #fff;
+    /* background-color: #000; */
+    /* border: 1px solid #4a4a4a; */
+    padding: 5px 10px;
+    user-select: none;
+    transition: all linear .2s;
+}
+
+.pagination__list-number-link:hover{
+    background-color: var(--red-color);
 }
