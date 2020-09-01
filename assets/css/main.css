@@ -798,6 +798,19 @@
     border-bottom: 1px solid black;
 }
 
+.anime__box{
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    border: 3px double rgb(88,88,88);
+}
+
+.anime__box:hover .anime__box-overlay{
+    background-color: rgba(56, 56, 56, 0.55);
+    display: flex;
+}
+
 .anime__box-overlay{
     text-decoration: none;
     position: absolute;
@@ -819,27 +832,13 @@
     animation: fadeIn linear .6s;
 }
 
-.anime__box:hover .anime__box-overlay{
-    background-color: rgba(56, 56, 56, 0.55);
-    display: flex;
-}
-
-.anime__box{
-    margin-top: 10px;
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    border: 3px double rgb(88,88,88);
-}
-
 .anime__link-wrap{
-    position: relative;
-    text-decoration: none;
+    margin-bottom: 25px;
 }
 
 .anime__box-img{
     width: 100%;
-    height: 100%;
+    height: 310px;
 }
 
 .anime__box-ep{
