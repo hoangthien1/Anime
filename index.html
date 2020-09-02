@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/font/fontawesome-free-5.14.0-web/css/all.min.css">
 
 </head>
@@ -17,10 +18,10 @@
         <header class="header">
             <div class="grid wide">
                 <nav class="header__nav">
-                    <a href="#" class="logo__link">
+                    <a href="#" class="logo__link hide-on-mobile">
                         <img src="./assets/img/logo.png" alt="">
                     </a>
-                    <ul class="header__nav-btn-list">
+                    <ul class="header__nav-btn-list hide-on-mobile-tablet">
                         <li class="header__nav-btn-items">
                             <span href="#" class="header__nav-btn-items-text">Thể loại</span>
                             <div class="anime__type">
@@ -203,7 +204,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="header__nav-control">
+                    <div class="header__nav-control hide-on-mobile">
                         <div class="header__nav-control-bell">
                             <i class="fas fa-bell header__nav-control-icon"></i>
                             <span class="header__nav-control-bell-notify">4</span>
@@ -262,6 +263,26 @@
                         </div>
                     </div>
                 </nav>
+                <label for="nav-mobile-input" class="nav__bars-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <input class="nav__input" type="checkbox" name="" id="nav-mobile-input">
+                <label for="nav-mobile-input" class="nav__overlay"></label>
+                <nav class="header__nav-mobile">
+                    <label for="nav-mobile-input" class="nav__mobile-close">
+                        <i class="fas fa-times"></i>
+                    </label>
+                    <ul class="nav__mobile-list">
+                        <li class="nav__mobile-item">
+                            <i class="fas fa-user-circle"></i>
+                            <a href="#" class="nav__mobile-item-link">Tài Khoản</a>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <i class="fas fa-bell"></i>
+                            <a href="#" class="nav__mobile-item-link">Thông Báo</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </header>
 
@@ -270,7 +291,7 @@
             <div class="grid wide">
                 <div class="row anime__container-slide no-gutters">
                     <div class="col l-12">
-                        <div class="anime__container-wrap">
+                        <div class="anime__container-wrap hide-on-mobile-tablet">
                             <h3 class="anime__slide-heading">Thịnh Hành</h3>
                             <div class="slide">   
                                 <div class="anime__slide">
@@ -538,10 +559,10 @@
                         </div>
                     </div>
                     <div class="row sm-gutter anime__body">
-                        <div class="col l-12">
+                        <div class="col l-12 m-12 c-12">
                             <h3 class="anime__body-heading">Mới Cập Nhật:</h3>
                         </div>
-                        <div class="col l-2-4">
+                        <div class="col l-2-4 m-4 c-6">
                             <div class="anime__box">
                                 <a href="#" class="anime__box-overlay">
                                     <i class="anime__box-play far fa-play-circle"></i>
@@ -554,7 +575,7 @@
                                 <a href="#" class="anime-box-name">Shokugeki no Souma: Gou no Sara</a>
                             </div>
                         </div>         
-                        <div class="col l-2-4">
+                        <div class="col l-2-4 m-4 c-6">
                             <div class="anime__box">
                                 <a href="#" class="anime__box-overlay">
                                     <i class="anime__box-play far fa-play-circle"></i>
@@ -567,7 +588,7 @@
                                 <a href="#" class="anime-box-name">Boruto: Naruto Next Generations</a>
                             </div>
                         </div>
-                        <div class="col l-2-4">
+                        <div class="col l-2-4 m-4 c-6">
                             <div class="anime__box">
                                 <a href="#" class="anime__box-overlay">
                                     <i class="anime__box-play far fa-play-circle"></i>
@@ -580,7 +601,7 @@
                                 <a href="#" class="anime-box-name">Maou Gakuin no Futekigousha: Shijou Saikyou no Maou no Shiso, Tensei shite Shison-tachi no Gakkou e</a>
                             </div>
                         </div>
-                        <div class="col l-2-4">
+                        <div class="col l-2-4 m-4 c-6">
                             <div class="anime__box">
                                 <a href="#" class="anime__box-overlay">
                                     <i class="anime__box-play far fa-play-circle"></i>
@@ -593,7 +614,7 @@
                                 <a href="#" class="anime-box-name">Sword Art Online: Alicization - War of Underworld</a>
                             </div>
                         </div>
-                        <div class="col l-2-4">
+                        <div class="col l-2-4 m-4 c-6">
                             <div class="anime__box">
                                 <a href="#" class="anime__box-overlay">
                                     <i class="anime__box-play far fa-play-circle"></i>
@@ -606,7 +627,7 @@
                                 <a href="#" class="anime-box-name">Kanojo, Okarishimasu</a>
                             </div>
                         </div>
-                        <div class="col l-2-4">
+                        <div class="col l-2-4 m-4 c-6">
                             <div class="anime__box">
                                 <a href="#" class="anime__box-overlay">
                                     <i class="anime__box-play far fa-play-circle"></i>
@@ -619,7 +640,7 @@
                                 <a href="#" class="anime-box-name">Fugou Keiji: Balance:UNLIMITED</a>
                             </div>
                         </div>
-                        <div class="col l-2-4">
+                        <div class="col l-2-4 m-4 c-6">
                             <div class="anime__box">
                                 <a href="#" class="anime__box-overlay">
                                     <i class="anime__box-play far fa-play-circle"></i>
@@ -632,7 +653,7 @@
                                 <a href="#" class="anime-box-name">Uzaki-chan Wants to Hang Out!</a>
                             </div>
                         </div>
-                        <div class="col l-2-4">
+                        <div class="col l-2-4 m-4 c-6">
                             <div class="anime__box">
                                 <a href="#" class="anime__box-overlay">
                                     <i class="anime__box-play far fa-play-circle"></i>
@@ -645,7 +666,7 @@
                                 <a href="#" class="anime-box-name">Enen no Shouboutai: Ni no Shou</a>
                             </div>
                         </div>
-                        <div class="col l-2-4">
+                        <div class="col l-2-4 m-4 c-6">
                             <div class="anime__box">
                                 <a href="#" class="anime__box-overlay">
                                     <i class="anime__box-play far fa-play-circle"></i>
@@ -658,7 +679,7 @@
                                 <a href="#" class="anime-box-name">Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan</a>
                             </div>
                         </div>
-                        <div class="col l-2-4">
+                        <div class="col l-2-4 m-4 c-6">
                             <div class="anime__box">
                                 <a href="#" class="anime__box-overlay">
                                     <i class="anime__box-play far fa-play-circle"></i>
@@ -671,7 +692,7 @@
                                 <a href="#" class="anime-box-name">Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season</a>
                             </div>
                         </div>
-                        <div class="col l-2-4">
+                        <div class="col l-2-4 m-4 c-6">
                             <div class="anime__box">
                                 <a href="#" class="anime__box-overlay">
                                     <i class="anime__box-play far fa-play-circle"></i>
@@ -684,7 +705,7 @@
                                 <a href="#" class="anime-box-name">Black Clover</a>
                             </div>
                         </div>
-                        <div class="col l-2-4">
+                        <div class="col l-2-4 m-4 c-6">
                             <div class="anime__box">
                                 <a href="#" class="anime__box-overlay">
                                     <i class="anime__box-play far fa-play-circle"></i>
@@ -697,7 +718,7 @@
                                 <a href="#" class="anime-box-name">One Piece</a>
                             </div>
                         </div>
-                        <div class="col l-2-4">
+                        <div class="col l-2-4 m-4 c-6">
                             <div class="anime__box">
                                 <a href="#" class="anime__box-overlay">
                                     <i class="anime__box-play far fa-play-circle"></i>
@@ -710,7 +731,7 @@
                                 <a href="#" class="anime-box-name">Thám Tử Lừng Danh Conan</a>
                             </div>
                         </div>
-                        <div class="col l-2-4">
+                        <div class="col l-2-4 m-4 c-6">
                             <div class="anime__box">
                                 <a href="#" class="anime__box-overlay">
                                     <i class="anime__box-play far fa-play-circle"></i>
@@ -723,7 +744,7 @@
                                 <a href="#" class="anime-box-name">Kaguya-sama wa Kokurasetai?: Tensai-tachi no Renai Zunousen Season 2</a>
                             </div>
                         </div>
-                        <div class="col l-2-4">
+                        <div class="col l-2-4 m-4 c-6">
                             <div class="anime__box">
                                 <a href="#" class="anime__box-overlay">
                                     <i class="anime__box-play far fa-play-circle"></i>
@@ -736,7 +757,7 @@
                                 <a href="#" class="anime-box-name">Plunderer</a>
                             </div>
                         </div>
-                        <div class="col l-2-4">
+                        <div class="col l-2-4 m-4 c-6">
                             <div class="anime__box">
                                 <a href="#" class="anime__box-overlay">
                                     <i class="anime__box-play far fa-play-circle"></i>
@@ -749,7 +770,7 @@
                                 <a href="#" class="anime-box-name">Plunderer</a>
                             </div>
                         </div>
-                        <div class="col l-2-4">
+                        <div class="col l-2-4 m-4 c-6">
                             <div class="anime__box">
                                 <a href="#" class="anime__box-overlay">
                                     <i class="anime__box-play far fa-play-circle"></i>
@@ -762,7 +783,7 @@
                                 <a href="#" class="anime-box-name">Plunderer</a>
                             </div>
                         </div>
-                        <div class="col l-2-4">
+                        <div class="col l-2-4 m-4 c-6">
                             <div class="anime__box">
                                 <a href="#" class="anime__box-overlay">
                                     <i class="anime__box-play far fa-play-circle"></i>
@@ -775,7 +796,7 @@
                                 <a href="#" class="anime-box-name">Plunderer</a>
                             </div>
                         </div>
-                        <div class="col l-2-4">
+                        <div class="col l-2-4 m-4 c-6">
                             <div class="anime__box">
                                 <a href="#" class="anime__box-overlay">
                                     <i class="anime__box-play far fa-play-circle"></i>
@@ -788,7 +809,7 @@
                                 <a href="#" class="anime-box-name">Plunderer</a>
                             </div>
                         </div>
-                        <div class="col l-2-4">
+                        <div class="col l-2-4 m-4 c-6">
                             <div class="anime__box">
                                 <a href="#" class="anime__box-overlay">
                                     <i class="anime__box-play far fa-play-circle"></i>
@@ -838,12 +859,12 @@
                                 6
                             </a>
                         </li>
-                        <li class="pagination__list-number">
+                        <li class="pagination__list-number hide-on-mobile">
                             <a href="#" class="pagination__list-number-link">
                                 7
                             </a>
                         </li>
-                        <li class="pagination__list-number">
+                        <li class="pagination__list-number hide-on-mobile">
                             <a href="#" class="pagination__list-number-link">
                                 8
                             </a>
@@ -872,12 +893,12 @@
             <footer>
                 <div class="grid wide footer__content">
                     <div class="row">
-                        <div class="col l-4">
-                            <a href="#" class="logo__link">
+                        <div class="col l-4 m-4 c-12">
+                            <a href="#" class="logo__link logo__link-footer">
                                 <img src="./assets/img/logo.png" alt="">
                             </a>
                         </div>
-                        <div class="col l-4">
+                        <div class="col l-4 m-4 c-12">
                             <h1 class="footer__heading footer__heading-social">Theo dõi chúng tôi</h1>
                             <ul class="footer__socials-list">
                                 <li class="footer__socials-item">
@@ -907,7 +928,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col l-4">
+                        <div class="col l-4 m-4 c-12">
                             <h1 class="footer__heading">Liên Hệ</h1>
                             <div class="footer__contract">
                                 <div class="footer__contract-group">

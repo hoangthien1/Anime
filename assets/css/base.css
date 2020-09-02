@@ -15,7 +15,81 @@
 html{
     font-size: 62.5%;
 }
+/* mobile nav */
+.nav__bars-btn{
+    width: 28px;
+    height: 28px;
+    color: #fff;
+    font-size: 3rem;
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 8px;
+}
 
+.nav__input{
+    display: none;
+}
+
+.nav__input:checked ~ .nav__overlay{
+    display: block;
+}
+
+.nav__input:checked ~ .header__nav-mobile{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.nav__overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+    animation: FadeIn linear .2s;
+}
+.header__nav-mobile{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform linear .2s, opacity linear .2s;
+}
+.nav__mobile-close{
+    font-size: 3.6rem;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.nav__mobile-list{
+    display: block;
+
+}
+.nav__mobile-item{
+    list-style: none;
+    margin-bottom: 5px;
+    -webkit-tap-highlight-color: transparent;
+}
+.nav__mobile-item i{
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+.nav__mobile-item-link{
+    text-decoration: none;
+    color: #666666;
+    padding: 8px;
+    font-size: 1.8rem;
+}
 /* Anime list */
 .anime__type{
     display: none;
