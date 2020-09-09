@@ -34,6 +34,7 @@
     height: 30px;
     user-select: none;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .header__nav-btn-items:last-child{
@@ -631,6 +632,7 @@
     background-color: var(--red-color);
     padding: 4px;
     transition: linear .2s;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .anime__slide-info-tags-link:hover{

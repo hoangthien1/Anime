@@ -7,11 +7,28 @@
         padding: 5px;
     }
 }
+/* ipad pro */
+@media (width: 1024px) {
+    .anime__slide-img {
+        width: 625px;
+    }
+    .footer__socials-item-link{
+        width: 45px;
+        height: 45px;
+    }
+    .back-to-top{
+        display: none;
+    }
+}
 
 /* tablet */ 
 @media (min-width: 740px) and (max-width: 1023px){
     .hide-on-tablet{
         display: none;
+    }
+    .header__nav-btn-items-text{
+        font-size: 1.2rem;
+        font-weight: 700;
     }
     .header__nav-control-bell::after{
         content: "";

@@ -18,10 +18,10 @@
         <header class="header">
             <div class="grid wide">
                 <nav class="header__nav">
-                    <a href="#" class="logo__link hide-on-mobile">
+                    <a href="#" class="logo__link hide-on-mobile-tablet">
                         <img src="./assets/img/logo.png" alt="">
                     </a>
-                    <ul class="header__nav-btn-list hide-on-mobile-tablet">
+                    <ul class="header__nav-btn-list hide-on-mobile">
                         <li class="header__nav-btn-items">
                             <span href="#" class="header__nav-btn-items-text">Thể loại</span>
                             <div class="anime__type">
@@ -287,7 +287,7 @@
         </header>
 
         <!-- body of website -->
-        <div class="anime__container">
+        <div id="back-to-top" class="anime__container">
             <div class="grid wide">
                 <div class="row anime__container-slide no-gutters">
                     <div class="col l-12">
@@ -916,16 +916,6 @@
                                         <i class="footer__socials-icon fab fa-youtube"></i>
                                     </a>
                                 </li>
-                                <li class="footer__socials-item">
-                                    <a href="#" class="footer__socials-item-link">
-                                        <i class="footer__socials-icon fab fa-instagram"></i>
-                                    </a>
-                                </li>
-                                <li class="footer__socials-item">
-                                    <a href="#" class="footer__socials-item-link">
-                                        <i class="footer__socials-icon fab fa-twitter"></i>
-                                    </a>
-                                </li>
                             </ul>
                         </div>
                         <div class="col l-4 m-4 c-12">
@@ -961,6 +951,11 @@
             </footer>
         </div>
 
+        <div class="back-to-top hide-on-mobile-tablet">
+            <a class="back-to-top-btn" href="#back-to-top">
+                <i class="back-to-top-icon fas fa-sort-up"></i>
+            </a>
+        </div>
         <!-- modal layout ----------------------------->
         <!-- <div class="modal">
             <div class="modal__overlay"></div>

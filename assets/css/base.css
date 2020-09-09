@@ -15,6 +15,31 @@
 html{
     font-size: 62.5%;
 }
+/* back to top btn */
+.back-to-top{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 25px;
+    bottom: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--red-color);
+    border-radius: 50%;
+}
+
+.back-to-top-btn{
+    text-decoration: none;
+    height: 25px;
+}
+
+.back-to-top-icon{
+    font-size: 4rem;
+    color: #fff;
+    line-height: 0;
+}
+
 /* mobile nav */
 .nav__bars-btn{
     width: 28px;
@@ -101,7 +126,7 @@ html{
     border-top: 3px solid #fdcb6e;
     box-shadow: 2px 2px 30px -5px rgba(0,0,0,0.83);
     border-radius: 2px;
-    animation: fadeIn linear .2s;
+    animation: MoveY linear .3s;
     z-index: 999;
 }
 
@@ -109,6 +134,18 @@ html{
     list-style: none;
     height: 100%;
     column-count: 3;
+    
+}
+
+@keyframes MoveY {
+    from{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .anime__type-list-items{
