@@ -137,45 +137,7 @@ html{
     user-select: none;
 }
 /* mobile nav list show */
-.mobile__list-type{
-    position: absolute;
-    /* border: 1px solid var(--red-color); */
-    width: 130%;
-    top: 40px;
-    left: -5px;
-    display: flex;
-    background-color: #ffff;
-    z-index: 1000;
-    display: none;
-    animation: IH linear .2s;
-}
-@keyframes IH{
-    0%{
-        height: 0;
-        opacity: 0;
-    }
-    20%{
-        height: 20%;
-        opacity: 1;
-    }
-    50%{
-        height: 50%;
-        opacity: 1;
-    }
-    80%{
-        height: 80%;
-        opacity: 1;
-    }
-    100%{
-        height: 100%;
-        opacity: 1;
-    }
-}
-.mobile__list-type-list{
-    list-style: none;
-    height: 100%;
-    column-count: 2;
-}
+
 /* Anime list */
 .anime__type{
     display: none;
