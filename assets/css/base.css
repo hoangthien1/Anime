@@ -75,6 +75,7 @@ html{
     display: none;
     animation: FadeIn linear .2s;
 }
+/* mobile nav */
 .header__nav-mobile{
     position: fixed;
     top: 0;
@@ -98,22 +99,82 @@ html{
 }
 .nav__mobile-list{
     display: block;
-
 }
 .nav__mobile-item{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     list-style: none;
     margin-bottom: 5px;
     -webkit-tap-highlight-color: transparent;
+    border: 1px solid #c3c3c3;
+    cursor: pointer;
+    border-radius: 2px;
 }
+
+.nav__mobile-item:hover i{
+    transform: rotate(90deg);
+}
+
+.nav__mobile-item:hover .mobile__list-type{
+    display: block;
+}
+
 .nav__mobile-item i{
-    font-size: 1.6rem;
-    color: var(--text-color);
+    color: var(--red-color);
+    font-size: 1.4rem;
+    padding-right: 8px;
+    transform: rotate(0deg);
+    transition: transform .2s;
 }
-.nav__mobile-item-link{
+
+.nav__mobile-item-text{
     text-decoration: none;
-    color: #666666;
+    color: #333;
     padding: 8px;
     font-size: 1.8rem;
+    user-select: none;
+}
+/* mobile nav list show */
+.mobile__list-type{
+    position: absolute;
+    /* border: 1px solid var(--red-color); */
+    width: 130%;
+    top: 40px;
+    left: -5px;
+    display: flex;
+    background-color: #ffff;
+    z-index: 1000;
+    display: none;
+    animation: IH linear .2s;
+}
+@keyframes IH{
+    0%{
+        height: 0;
+        opacity: 0;
+    }
+    20%{
+        height: 20%;
+        opacity: 1;
+    }
+    50%{
+        height: 50%;
+        opacity: 1;
+    }
+    80%{
+        height: 80%;
+        opacity: 1;
+    }
+    100%{
+        height: 100%;
+        opacity: 1;
+    }
+}
+.mobile__list-type-list{
+    list-style: none;
+    height: 100%;
+    column-count: 2;
 }
 /* Anime list */
 .anime__type{
@@ -134,7 +195,6 @@ html{
     list-style: none;
     height: 100%;
     column-count: 3;
-    
 }
 
 @keyframes MoveY {
@@ -161,7 +221,8 @@ html{
     font-weight: 500;
     transition: ease .2s;
     white-space: nowrap;
-    transition: border-bottom linear .2s
+    transition: border-bottom linear .2s;
+    user-select: none;
 }
 
 .anime__type-list-items-link:hover{
